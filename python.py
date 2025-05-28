@@ -270,3 +270,79 @@ while balance<1000:
     elif choice==4:
          print('thank you for using the atm')
          break
+    
+    l=['prasanna','sweetie','prabhas','jahnavi']
+    print(l[2:3])
+
+    l=['prasanna','sweetie','prabhas','jahnavi']
+print(l[:])
+
+a=1
+b=2
+c=[b,a]
+c.sort()
+print(c)
+
+l=[1,3,5,4,2,7,1,9,5,3,2]
+l[0],l[-1] = l[-1], l[0]
+print(l)
+
+  
+l=[1,2,3,4,5,6,7,8,9,1,2,3]
+print(l[::-1])
+print(l[::1])
+
+
+
+# check if the given string is a palindrome
+
+while True:
+    name=input('enter your name :')
+    if name==name[::-1]:
+       print('it is a palindrome')
+       break
+    else:
+       print('not a palindrome')
+
+      
+l=[1,2,3,4,5,6,7,8,9,0,12,13,14,15,16,56,76,45]
+to_remove = [7,8,56,45]
+# print(1 not in l)
+result=[]
+r=[]
+for i in range(len(l)):   #0-14 for i in range(14)
+    if l[i] not in to_remove:
+        r.append(l[i])
+print(r)
+
+
+for i in l: #i-1-45
+    if i not in to_remove :
+        result.append(i)
+print(result)
+
+l=[1,2,3,4]
+t=(1,2,3,4)
+l[1]=6
+print(l)
+
+d=list(t)
+e=tuple(l)
+print(d)
+print(e)
+
+import copy
+a=42
+b=a #b=42
+a=21
+print(a,b)
+
+c=[1,2,3,4,5]
+d=c #d=[1,2,3,4,5]
+e=copy.copy(c)
+e[1]=6 [1,6,3,4,5]
+d[1]=3 #d=[1,3,3,4,5]
+print(id(c))
+print(id(d))
+print(id(e))
+print(c,d,e)

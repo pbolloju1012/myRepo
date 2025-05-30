@@ -346,3 +346,134 @@ print(id(c))
 print(id(d))
 print(id(e))
 print(c,d,e)
+
+
+#print("string",sep=" ",end="/n")
+print("prasanna",end=" ")
+print("sweety", end="-")
+print("prabhas")
+
+    
+print("prasanna","sweety","prabhas","darling",sep=" loves Prabhas ")
+
+l=[1,2,3,12,14,4,5,6,7,8,9,10]
+for i in l:
+    if i==10:
+        break
+d=[2,3,1]
+print(d==l)
+#d={key:value,key:value}
+myDetails = {"name":"prasanna","masters":"CS","job":"google_aspirant"}
+myDetails2 = {"name":"prasanna","job":"google_aspirant","masters":"CS"}
+
+print(myDetails["name"])
+print(myDetails==myDetails2)
+
+birthdays={"prasanna":"oct 12","prabhas":"oct 23","dady":"july 10"}
+print("my birthday is on",birthdays["prasanna"])
+birthdays["mummy"]="nov 8"
+
+print(birthdays)
+
+
+for i in birthdays.keys():
+    print(i)
+for i in birthdays.values():
+    print(i)
+for i in birthdays.items():
+    print(i)
+
+birthdays={"prasanna":"oct 12","prabhas":"oct 23","dady":"july 10"}
+print(list(birthdays.keys()))
+    
+print(list(birthdays.items()))
+print("prasanna" in birthdays.keys())
+
+details={"prasanna":{"age":25,"gender":"female"},
+         "prabhas":{"age":37,"gender":"male"}}
+#print(details.keys())
+print(details,)
+for key,value in details.items():
+    print(key,value,sep=":")
+
+details={"prasanna":{"age":25,"gender":"female"},
+         "prabhas":{"age":37,"gender":"male"}}
+#print(details.keys())
+for key,value in details.items():
+    print(key,value,sep=":")
+
+print(details["prasanna"]["gender"])
+count+=i
+
+arr=[1,2,3,4,5,6]
+def listLength(l):
+    return Listlen(l)
+    
+arr2=[2,3,4,5,6,7,8,9,10]
+    
+
+def Listlen(arr):
+    count=0
+    for i in arr:
+        count+=i
+    sum=0
+    for i in arr:
+        sum=sum+i
+    return sum
+    
+    
+print(listLength(arr))
+print(listLength(arr2))
+
+
+
+
+
+# i ,count
+# 1,count=1
+# 2, count=2
+
+   
+
+
+
+
+
+
+
+
+        
+          
+    
+        
+
+
+
+
+
+        
+
+
+    
+
+
+
+   
+
+
+
+
+
+
+
+
+        
+          
+    
+        
+
+
+
+
+
+        

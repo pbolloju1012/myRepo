@@ -433,30 +433,119 @@ print(listLength(arr2))
 # 1,count=1
 # 2, count=2
 
-   
+
+name={"names":"prasanna","age":23,"city":"seatle"}
+for i in name.items():
+    print(i)
+
+
+data={"prasanna":{"age":23,"father":"srinu","mother":"sunitha"},"prabhas":{"age":33,"father":"prabhas","mother":"mummy"}
+    }
+print(data["prasanna"]["father"])
+print(data.values(),data.keys())
+for i in data.items():
+    print(i)
+#to add a new key-value pair
+name={"names":"prasanna","age":23,"city":"seatle"}
+name["father"]="srinu"
+print(name)
+#to change the excisting value
+name={"names":"prasanna","age":23,"city":"seatle"}
+name["father"]="srinu"
+name["names"]="sweetie"
+print(name)
+ #to delete the existing value
+name={"names":"prasanna","age":23,"city":"seatle"}
+name["father"]="srinu"
+name["names"]="sweetie"
+
+del name["age"]
+print(name)
+name={"names":"prasanna","age":23,"city":"seatle"}
+name["father"]="srinu"
+name["names"]="sweetie"
+
+for i in name.items():
+    print(i)
+
+print("sweetie" in name.values())
+print(max(name.values()))
+#to max the values in the dictionary
+
+
+number={"a":10,"b":20,"c":40}
+
+myValues=max(number.values())
+print(myValues)
+#to reverse the values in the dictionary
+numbers={'a': 1, 'b': 2, 'c': 3}
+reverse={v:k for k,v in numbers.items()}
+print(reverse)
+words = ['apple2', 'banana2', 'apple3', 'orange', 'banana1', 'apple']
+keys=  [1,2,2,3,4,5]
+values=dict(zip(words,keys))
+print(values)
+
+name = 'hello\nthis is prabhas\nprasanna\'s boyfriend' #escape character(\'')
+print(name)
+
+name = '''hello
+
+
+this is prabhas\nprasanna\'s
 
 
 
 
+boyfriend'''
+print(name)
 
 
+spam = "Hello Prasanna"
+
+print(spam[2:])
+print(spam[2:5])
 
 
-        
-          
+# string methods
+spam="hello world"
+name = "prAsaNna"
+print(name.upper())
+print(name.lower())
+
+print(name.isupper())
+
+print(spam.startswith('hello'))
+
+list = ["prasanna,prabhas","apple","pineapple"]
+string=' '.join(list) #join method for joining
+print(string)
+
+list2= string.split(',') #for breaking the string
+print(list2)
+
+
+string2="  hElLo wOrld    "
+print(string2)
+print(string2.strip())
+string2=string2.lower().strip()
+print(string2)
+
+if string2=="hello world":
+    print("Success, you understood python validations")
     
-        
 
+myDetails = "hi everyone, my name is prasanna and prasanna age is 45 and prasanna boyfriend is prabhas. saying hi again"
+details=myDetails.split()
+print(details)
 
-
-
-
-        
-
-
+details_dict={}
+for i in details:
+    details_dict[i]=details_dict.get(i,0)+1
     
-
-
+print(details_dict)
+numbers={k:v for k,v in details_dict.items() if v>=2 }
+print(numbers)
 
    
 

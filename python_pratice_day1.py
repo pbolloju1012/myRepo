@@ -99,3 +99,90 @@ if name == name[::-1]:
     print("its a palindrome")
 else:
     print("not a palindrome")
+    #ATM Simulation
+
+#Write a simple ATM program that lets the user check balance, deposit, withdraw, and exit.
+balance=0
+while True:
+    print('1.check balance')
+    print('2.deposite money')
+    print('3.withdraw money')
+    print('4.exit')
+    choice=int(input('enter your choice :'))
+    if choice==1:
+        print(' your balance',balance)
+    elif choice==2:
+         deposite=int(input('enter money to deposite :'))
+         balance=balance+deposite
+         print('you total balance is',balance)
+         
+    elif choice==3:
+         withdraw=int(input('enter your withdraw money :'))
+         if balance>withdraw:
+           
+             balance=balance-withdraw
+             print('now your balance is ',balance)
+         else:
+             print('you have insufficent amaount')
+    elif choice==4:
+         print('thank you for using the atm')
+         break
+
+ #  List Comprehension/Manipulation
+
+#Remove all occurrences of a specific value from a list. 
+numbers=[1,2,3,4,5,6]
+numbers=[num for num in numbers if num != 2]
+print(numbers)
+
+# Random Module
+
+# Write a function that returns a random fortune from a list of fortunes.
+
+import random
+def fortunes():
+    numbers=["You will have a great day!",
+        "Something unexpected will happen.",
+        "Be cautious today.",
+        "Happiness is coming your way.",
+        "You will achieve your goals."]
+        
+    return random.choice(numbers)
+        
+print(fortunes())
+#Dictionary Reverse
+
+#Given a dictionary, create a new dictionary that swaps keys and values.
+dictnory={"apple":"fruit","onion":"vegtable","laptop":"electric"}
+
+swapDict={v:k for k,v in dictnory.items()}
+print(swapDict)
+
+#String Splitting and Joining
+
+#Given a list of words, join them into a single string separated by commas, then split the string back into a list.
+words=["apple","mango","pineapple"]
+joined="," .join(words)
+print(joined)
+spilt=joined.split(",")
+print(spilt)
+Nested Dictionaries
+
+#Create a nested dictionary for two people with their age and gender, then print each person's details.
+people = {
+    "person1": {
+        "name": "Alice",
+        "age": 30,
+        "gender": "Female"
+    },
+    "person2": {
+        "name": "Bob",
+        "age": 25,
+        "gender": "Male"
+    }
+}
+
+for person, details in people.items():
+    print(f"{person}:")
+    for key, value in details.items():
+        print(f"  {key}: {value}")

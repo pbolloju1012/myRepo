@@ -166,7 +166,7 @@ joined="," .join(words)
 print(joined)
 spilt=joined.split(",")
 print(spilt)
-Nested Dictionaries
+#Nested Dictionaries
 
 #Create a nested dictionary for two people with their age and gender, then print each person's details.
 people = {
